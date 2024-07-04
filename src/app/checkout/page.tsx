@@ -14,9 +14,9 @@ export async function getEvent(eventId: string): Promise<EventModel> {
     },
   });
 
-  //return response.json();
-  const data = await response.json();
-  return data.event;
+  return response.json();
+  // const data = await response.json();
+  // return data.event;
 }
 
 export default async function CheckoutPage() {
