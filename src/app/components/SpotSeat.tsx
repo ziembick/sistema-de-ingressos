@@ -1,4 +1,4 @@
-
+"use client";
 
 import { selectSpotAction, unselectSpotAction } from "../../actions";
 
