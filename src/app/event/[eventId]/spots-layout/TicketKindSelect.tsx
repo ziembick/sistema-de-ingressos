@@ -1,4 +1,4 @@
-
+"use client";
 
 import { selectTicketTypeAction } from "@/actions";
 
