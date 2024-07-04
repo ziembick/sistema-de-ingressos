@@ -1,11 +1,12 @@
 import { SpotSeat } from "@/app/components/SpotSeat";
 import Title from "@/app/components/Title";
-import { EventModel, SpotModel } from "@/models";
+
 import Link from "next/link";
 import React from "react";
 import { TicketKindSelect } from "./TicketKindSelect";
 import { cookies } from "next/headers";
 import { EventImage } from "@/app/components/EventImage";
+import { EventModel, SpotModel } from "@/models";
 
 
 const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL;
@@ -17,6 +18,9 @@ export async function getSpots(eventId: string): Promise<{
     `${API_BASE_URL}/api/events/${eventId}/spots`,
     {
       cache: "no-store",
+      headers: {
+        "Content-Type": "application/json",
+      },
       next: {
         tags: [`events/${eventId}`]
       }

@@ -1,7 +1,7 @@
 import { cookies } from "next/headers";
 
 import { redirect } from "next/navigation";
-import { EventModel, SpotModel } from "../../models";
+import { EventModel } from "../../models";
 import Title from "../components/Title";
 import { CheckoutForm } from "./CheckoutForm";
 
