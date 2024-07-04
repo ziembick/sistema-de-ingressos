@@ -18,9 +18,6 @@ export async function getSpots(eventId: string): Promise<{
     `${API_BASE_URL}/api/events/${eventId}/spots`,
     {
       cache: "no-store",
-      headers: {
-        "Content-Type": "application/json",
-      },
       next: {
         tags: [`events/${eventId}`]
       }

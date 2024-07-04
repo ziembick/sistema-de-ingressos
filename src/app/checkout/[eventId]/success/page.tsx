@@ -7,9 +7,6 @@ const API_BASE_URL = "https://sistema-de-ingressos.vercel.app";
 export async function getEvent(eventId: string): Promise<EventModel> {
   const response = await fetch(`${API_BASE_URL}/api/events/${eventId}`, {
     cache: "no-store",
-    headers: {
-      "Content-Type": "application/json",
-    },
     next: {
       tags: [`events/${eventId}`],
     },
