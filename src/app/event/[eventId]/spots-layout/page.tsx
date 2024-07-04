@@ -1,6 +1,5 @@
 import { SpotSeat } from "@/app/components/SpotSeat";
 import Title from "@/app/components/Title";
-
 import Link from "next/link";
 import React from "react";
 import { TicketKindSelect } from "./TicketKindSelect";
